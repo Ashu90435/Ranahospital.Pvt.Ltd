@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashutosh City Hospital</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;color:#263238;background:#f7fbfc;line-height:1.6}
+a{text-decoration:none;color:inherit}
+header{background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.08);position:sticky;top:0;z-index:10}
+.nav{max-width:1150px;margin:auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:10px;color:#087f8c;font-weight:800;font-size:23px}
+.logo-icon{width:42px;height:42px;border-radius:50%;background:#087f8c;color:#fff;display:grid;place-items:center;font-size:25px}
+nav{display:flex;gap:24px;font-weight:600;color:#455a64}
+nav a:hover{color:#087f8c}
+.call-btn{background:#087f8c;color:white;padding:11px 17px;border-radius:25px}
+.hero{background:linear-gradient(110deg,#e8f8fa,#d5f1f4);padding:75px 20px}
+.hero-inner{max-width:1150px;margin:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center}
+.hero h1{font-size:52px;line-height:1.1;color:#075e69;margin-bottom:18px}
+.hero p{font-size:19px;color:#52666c;max-width:650px;margin-bottom:28px}
+.buttons{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 22px;border-radius:7px;font-weight:700}
+.primary{background:#087f8c;color:#fff}
+.secondary{background:#fff;color:#087f8c;border:2px solid #087f8c}
+.hero-card{background:#fff;border-radius:22px;padding:32px;box-shadow:0 15px 45px rgba(0,70,80,.13)}
+.hero-card h3{color:#087f8c;font-size:25px;margin-bottom:15px}
+.hero-card p{font-size:16px;margin:8px 0}
+.badge{display:inline-block;background:#e3f7f8;color:#087f8c;padding:7px 13px;border-radius:20px;font-weight:700;margin-bottom:15px}
+section{padding:70px 20px}
+.container{max-width:1150px;margin:auto}
+.section-title{text-align:center;margin-bottom:40px}
+.section-title h2{font-size:35px;color:#075e69}
+.section-title p{color:#66777c;margin-top:7px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;padding:28px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.06);border:1px solid #e8eff0}
+.icon{font-size:34px;margin-bottom:12px}
+.card h3{color:#075e69;margin-bottom:8px}
+.about{background:#fff}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.about-box{background:#e9f8fa;border-radius:20px;padding:35px}
+.about-box h3{font-size:28px;color:#075e69;margin-bottom:15px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:25px}
+.stat{background:#fff;border-radius:12px;padding:18px;text-align:center}
+.stat strong{display:block;font-size:28px;color:#087f8c}
+.doctors .card{text-align:center}
+.doctor{width:90px;height:90px;border-radius:50%;margin:0 auto 15px;background:#d8f1f3;display:grid;place-items:center;font-size:40px}
+.contact{background:#075e69;color:#fff}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}
+.contact h2{font-size:35px;margin-bottom:12px}
+.contact p{color:#d7eef0}
+.contact-card{background:#fff;color:#263238;padding:30px;border-radius:15px}
+.contact-card input,.contact-card textarea{width:100%;padding:13px;margin:7px 0 12px;border:1px solid #d6e0e2;border-radius:6px;font:inherit}
+.contact-card button{width:100%;border:0;cursor:pointer;font:inherit}
+footer{background:#063f47;color:#c9e4e7;text-align:center;padding:25px 20px}
+.mobile-call{display:none}
+@media(max-width:800px){
+ nav{display:none}.hero-inner,.about-grid,.contact-grid{grid-template-columns:1fr}
+ .hero h1{font-size:40px}.cards{grid-template-columns:1fr}.stats{grid-template-columns:1fr}
+ .hero{padding:50px 20px}section{padding:55px 20px}.mobile-call{display:block;position:fixed;bottom:15px;left:15px;right:15px;background:#087f8c;color:#fff;text-align:center;padding:14px;border-radius:30px;font-weight:800;z-index:20;box-shadow:0 5px 20px rgba(0,0,0,.2)}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="#home"><span class="logo-icon">✚</span> Ashutosh City Hospital</a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#doctors">Doctors</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="call-btn" href="tel:9696623691">☎ 9696623691</a>
+  </div>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="badge">Compassionate Care • Modern Facilities</span>
+      <h1>Your Health,<br>Our Priority</h1>
+      <p>Welcome to <strong>Ashutosh City Hospital</strong> — a modern healthcare destination focused on quality treatment, patient comfort and compassionate care.</p>
+      <div class="buttons">
+        <a class="btn primary" href="#contact">Make an Enquiry</a>
+        <a class="btn secondary" href="tel:9696623691">Call 9696623691</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>🏥 Ashutosh City Hospital</h3>
+      <p><strong>Emergency:</strong> Available for enquiry</p>
+      <p><strong>Enquiry:</strong> 9696623691</p>
+      <p><strong>Hours:</strong> 24×7 Support</p>
+      <p style="margin-top:15px;color:#66777c">Please call the enquiry number for appointments, services and hospital information.</p>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div>
+      <span class="badge">About Us</span>
+      <h2 style="font-size:38px;color:#075e69;margin-bottom:15px">Healthcare with Care & Trust</h2>
+      <p>Ashutosh City Hospital is a dummy/demo hospital website designed to present hospital information in a clean and professional format. Hospital services, doctor details and contact information can be customized according to actual requirements.</p>
+      <div class="stats">
+        <div class="stat"><strong>24×7</strong>Support</div>
+        <div class="stat"><strong>10+</strong>Services</div>
+        <div class="stat"><strong>100%</strong>Care</div>
+      </div>
+    </div>
+    <div class="about-box">
+      <h3>Why Choose Us?</h3>
+      <p>✓ Patient-focused care</p>
+      <p>✓ Modern healthcare environment</p>
+      <p>✓ Experienced medical professionals</p>
+      <p>✓ Convenient enquiry & appointment support</p>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Services</h2>
+      <p>Healthcare services can be customized for your hospital.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="icon">🩺</div><h3>General Medicine</h3><p>Consultation and primary healthcare support.</p></div>
+      <div class="card"><div class="icon">👶</div><h3>Mother & Child Care</h3><p>Dedicated care and support for mothers and children.</p></div>
+      <div class="card"><div class="icon">❤️</div><h3>Emergency Care</h3><p>Prompt medical assistance and emergency enquiry support.</p></div>
+      <div class="card"><div class="icon">🔬</div><h3>Diagnostics</h3><p>Diagnostic and laboratory services can be listed here.</p></div>
+      <div class="card"><div class="icon">💊</div><h3>Pharmacy</h3><p>Pharmacy and medicine-related information.</p></div>
+      <div class="card"><div class="icon">🏥</div><h3>Patient Care</h3><p>Comfortable and patient-focused healthcare services.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="doctors" id="doctors">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Doctors</h2>
+      <p>Doctor profiles can be added here.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="doctor">👨‍⚕️</div><h3>Dr. Ashutosh</h3><p>Senior Consultant</p></div>
+      <div class="card"><div class="doctor">👩‍⚕️</div><h3>Dr. Priya</h3><p>Medical Consultant</p></div>
+      <div class="card"><div class="doctor">👨‍⚕️</div><h3>Dr. Rahul</h3><p>Specialist</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container contact-grid">
+    <div>
+      <h2>Enquiry & Contact</h2>
+      <p>For appointments, hospital services or any enquiry, please contact us.</p>
+      <p style="font-size:27px;font-weight:800;margin-top:22px">☎ 9696623691</p>
+      <p style="margin-top:12px">Ashutosh City Hospital</p>
+      <p>Hospital Address: Add your complete address here</p>
+    </div>
+    <div class="contact-card">
+      <h3 style="color:#075e69;font-size:24px;margin-bottom:10px">Send an Enquiry</h3>
+      <form onsubmit="event.preventDefault(); alert('Thank you! Please call 9696623691 to complete your enquiry.');">
+        <input type="text" placeholder="Your Name" required>
+        <input type="tel" placeholder="Mobile Number" required>
+        <textarea rows="4" placeholder="Your Enquiry" required></textarea>
+        <button class="btn primary" type="submit">Submit Enquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>© 2026 Ashutosh City Hospital. All Rights Reserved.</p>
+  <p>Enquiry: 9696623691</p>
+</footer>
+
+<a class="mobile-call" href="tel:9696623691">☎ Call for Enquiry — 9696623691</a>
+</body>
+</html>
