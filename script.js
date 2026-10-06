@@ -1,0 +1,1 @@
+function toggleNav(){document.getElementById('navlinks').classList.toggle('open')}function nextSlide(){const s=document.querySelector('.slide');s.classList.toggle('alt');}
