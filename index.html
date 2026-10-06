@@ -48,16 +48,17 @@
   </div>
 </nav>
 
-<section class="slider">
-  <div class="slide slide-one">
-    <div class="slide-overlay"></div>
-    <div class="slide-content">
-      <h2>COMPASSIONATE HEALTHCARE<br>FOR EVERY FAMILY</h2>
-      <p>Trusted healthcare services in Gorakhpur</p>
-      <a href="about.html">READ MORE</a>
-    </div>
-    <button class="arrow left">‹</button><button class="arrow right" onclick="nextSlide()">›</button>
-  </div>
+<section class="slider" aria-label="Hospital photo slideshow">
+<div class="slides">
+<div class="photo-slide active"><img src="A.jpg" alt="Rana Hospital photo 1"></div>
+<div class="photo-slide"><img src="B.jpg" alt="Rana Hospital photo 2"></div>
+<div class="photo-slide"><img src="c.jpg" alt="Rana Hospital photo 3"></div>
+<div class="photo-slide"><img src="D.jpg" alt="Rana Hospital photo 4"></div>
+</div>
+<div class="slide-caption"><h2>RANA HOSPITAL PVT. LTD.</h2><p>Trusted healthcare services in Gorakhpur</p><a href="about.html">READ MORE</a></div>
+<button class="arrow left" onclick="changeSlide(-1)">‹</button>
+<button class="arrow right" onclick="changeSlide(1)">›</button>
+<div class="dots"><button class="dot active" onclick="goToSlide(0)"></button><button class="dot" onclick="goToSlide(1)"></button><button class="dot" onclick="goToSlide(2)"></button><button class="dot" onclick="goToSlide(3)"></button></div>
 </section>
 
 <section class="welcome">
