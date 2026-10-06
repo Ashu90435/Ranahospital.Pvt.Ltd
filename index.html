@@ -1,99 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rana Hospital Pvt. Ltd. | Gorakhpur</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rana Hospital Pvt. Ltd. | Gorakhpur</title>
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
-<div class="topbar">
-  <div class="top-inner">
-    <div class="social"><span>▶</span><span>f</span><span>◎</span><span>♥</span><span>in</span><span>◉</span></div>
-    <div class="top-right"><a href="contact.html">⊕ &nbsp;Book An Appointment</a><a href="tel:9696623691">☎ 9696623691</a></div>
+  <div class="top-notice">
+    कृपया ध्यान दे, राणा हॉस्पिटल किसी भी प्रकार का ऑनलाइन सेवा प्रदान नहीं करता है।
   </div>
-</div>
 
-<div class="brand-area">
-  <div class="brand-inner">
-    <div class="hospital-name">
-      <h1>Rana Hospital Pvt. Ltd.</h1>
-      <p>Gorakhpur, Uttar Pradesh</p>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a class="nav-link active" href="index.html">HOME</a>
+      <a class="nav-link" href="about.html">ABOUT US</a>
+      <a class="nav-link" href="gallery.html">GALLERY</a>
+      <a class="nav-link" href="departments.html">DEPARTMENTS</a>
+      <a class="nav-link" href="contact.html">CONTACT US</a>
+      <div class="search-box">
+        <input type="text" placeholder="Search for...">
+        <span>⌕</span>
+      </div>
     </div>
-    <div class="doctor-art">
-      <div class="doctor-circle">✚</div>
-      <div class="doctor-body">MEDICAL<br><b>CARE</b></div>
-    </div>
-    <div class="contact-pills">
-      <a href="tel:9696623691">☎ &nbsp; Call: 9696623691</a>
-      <a href="contact.html">✉ &nbsp; Enquiry / Contact Us</a>
-    </div>
-  </div>
-</div>
+  </nav>
 
-<div class="notice">कृपया ध्यान दे, राणा हॉस्पिटल किसी भी प्रकार का ऑनलाइन सेवा प्रदान नहीं करता है।</div>
+  <main>
+    <section class="hero-slider" id="heroSlider">
+      <div class="slides">
+        <div class="slide active">
+          <img src="A.jpg" alt="Rana Hospital">
+        </div>
+        <div class="slide">
+          <img src="B.jpg" alt="Rana Hospital">
+        </div>
+        <div class="slide">
+          <img src="c.jpg" alt="Rana Hospital">
+        </div>
+        <div class="slide">
+          <img src="D.jpg" alt="Rana Hospital">
+        </div>
+      </div>
 
-<nav class="nav">
-  <div class="nav-inner">
-    <button class="mobile-menu" onclick="toggleNav()">☰</button>
-    <div id="navlinks">
-      <a class="active" href="index.html">HOME</a>
-      <a href="about.html">ABOUT US</a>
-      <a href="gallery.html">GALLERY</a>
-      <a href="departments.html">DEPARTMENTS</a>
-      <a href="contact.html">CONTACT US</a>
-    </div>
-    <form class="search" onsubmit="return false"><input placeholder="Search for..."><button>⌕</button></form>
-  </div>
-</nav>
+      <button class="slider-arrow prev" type="button" aria-label="Previous photo">&#10094;</button>
+      <button class="slider-arrow next" type="button" aria-label="Next photo">&#10095;</button>
 
-<section class="slider" aria-label="Hospital photo slideshow">
-<div class="slides">
-<div class="photo-slide active"><img src="A.jpg" alt="Rana Hospital photo 1"></div>
-<div class="photo-slide"><img src="B.jpg" alt="Rana Hospital photo 2"></div>
-<div class="photo-slide"><img src="c.jpg" alt="Rana Hospital photo 3"></div>
-<div class="photo-slide"><img src="D.jpg" alt="Rana Hospital photo 4"></div>
-</div>
-<div class="slide-caption"><h2>RANA HOSPITAL PVT. LTD.</h2><p>Trusted healthcare services in Gorakhpur</p><a href="about.html">READ MORE</a></div>
-<button class="arrow left" onclick="changeSlide(-1)">‹</button>
-<button class="arrow right" onclick="changeSlide(1)">›</button>
-<div class="dots"><button class="dot active" onclick="goToSlide(0)"></button><button class="dot" onclick="goToSlide(1)"></button><button class="dot" onclick="goToSlide(2)"></button><button class="dot" onclick="goToSlide(3)"></button></div>
-</section>
+      <div class="slider-dots" aria-label="Choose photo">
+        <button class="dot active" type="button" aria-label="Photo 1"></button>
+        <button class="dot" type="button" aria-label="Photo 2"></button>
+        <button class="dot" type="button" aria-label="Photo 3"></button>
+        <button class="dot" type="button" aria-label="Photo 4"></button>
+      </div>
+    </section>
 
-<section class="welcome">
-  <div class="welcome-main">
-    <h2>Welcome to <span>Rana Hospital Pvt. Ltd.</span></h2>
-    <div class="blue-line"></div>
-    <p>Rana Hospital Pvt. Ltd. is committed to providing caring, reliable and patient-focused healthcare support for the people of Gorakhpur and nearby areas.</p>
-    <p>Our aim is to provide a safe, comfortable and supportive environment for patients and their families.</p>
-    <a class="read" href="about.html">READ MORE →</a>
-  </div>
-  <aside class="quick">
-    <h3>Hospital Enquiry</h3>
-    <p>For hospital information, directions and enquiries:</p>
-    <a href="tel:9696623691">☎ 9696623691</a>
-    <hr>
-    <p><b>Address</b><br>Mohaddipur Chauraha,<br>Gorakhpur, UP - 273012</p>
-  </aside>
-</section>
+    <section class="welcome">
+      <div class="welcome-text">
+        <h1>Welcome to <span>Rana Hospital Pvt. Ltd.</span></h1>
+        <p>Providing trusted healthcare services in Gorakhpur.</p>
+      </div>
+      <div class="enquiry">
+        <h2>Hospital Enquiry</h2>
+        <p>Call: <a href="tel:9696623691">9696623691</a></p>
+      </div>
+    </section>
+  </main>
 
-<section class="blue-section">
-  <h2>OUR SERVICES</h2>
-  <div class="blue-line center"></div>
-  <div class="service-row">
-    <div><b>01</b><h3>General Consultation</h3><p>Professional guidance for common healthcare needs.</p></div>
-    <div><b>02</b><h3>Emergency Support</h3><p>Prompt assistance for urgent healthcare requirements.</p></div>
-    <div><b>03</b><h3>Diagnostic Support</h3><p>Support for investigations and diagnostic needs.</p></div>
-  </div>
-</section>
-
-<footer>
-  <div class="footer-inner">
-    <div><h3>Rana Hospital Pvt. Ltd.</h3><p>Mohaddipur Chauraha, Gorakhpur, Uttar Pradesh - 273012</p></div>
-    <div><p><b>Enquiry:</b> <a href="tel:9696623691">9696623691</a></p><p>© 2026 Rana Hospital Pvt. Ltd.</p></div>
-  </div>
-</footer>
-<script src="script.js"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>
