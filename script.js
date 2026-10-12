@@ -36,4 +36,61 @@ document.addEventListener('DOMContentLoaded', () => {
     const whatsappUrl = `https://wa.me/918953128683?text=${encodeURIComponent(text)}`;
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   });
+}); 
+// Homepage photo slider
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".photo-slider").forEach(function (slider) {
+    const slides = Array.from(slider.querySelectorAll(".slide"));
+    const dots = Array.from(slider.querySelectorAll(".dot"));
+    const prev = slider.querySelector(".prev");
+    const next = slider.querySelector(".next");
+
+    if (slides.length === 0) return;
+
+    let current = 0;
+    let timer;
+
+    function showSlide(index) {
+      current = (index + slides.length) % slides.length;
+
+      slides.forEach(function (slide, i) {
+        slide.classList.toggle("active", i === current);
+      });
+
+      dots.forEach(function (dot, i) {
+        dot.classList.toggle("active", i === current);
+      });
+    }
+
+    function startAutoSlide() {
+      clearInterval(timer);
+      timer = setInterval(function () {
+        showSlide(current + 1);
+      }, 5000);
+    }
+
+    if (prev) {
+      prev.addEventListener("click", function () {
+        showSlide(current - 1);
+        startAutoSlide();
+      });
+    }
+
+    if (next) {
+      next.addEventListener("click", function () {
+        showSlide(current + 1);
+        startAutoSlide();
+      });
+    }
+
+    dots.forEach(function (dot, i) {
+      dot.addEventListener("click", function () {
+        showSlide(i);
+        startAutoSlide();
+      });
+    });
+
+    showSlide(0);
+    startAutoSlide();
+  });
 });
