@@ -1,1 +1,298 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>About Us | Army Computer Institute</title><link rel="stylesheet" href="style.css"></head><body><header class="topbar"><a class="brand" href="index.html"><span class="brand-icon">ACI</span><span>ARMY COMPUTER INSTITUTE<small>Learn Today. Lead Tomorrow.</small></span></a><button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav').classList.toggle('show')">☰</button><nav class="nav"><a href="index.html">Home</a><a class="active" href="about.html">About Us</a><a href="courses.html">Courses</a><a href="contact.html">Contact</a><a class="nav-cta" href="contact.html#enquiry">Admission Enquiry</a></nav></header><main><section class="page-hero"><p class="eyebrow">WHO WE ARE</p><h1>About <span>Our Institute</span></h1><p>A place to begin learning computer skills and growing digital confidence.</p></section><section class="section split"><div><p class="eyebrow">ARMY COMPUTER INSTITUTE</p><h2>Learn with purpose.<br><span>Grow with confidence.</span></h2><p>Army Computer Institute, located in Bichhiya, Jungle Tulsiram, Gorakhpur, welcomes learners interested in computer education and practical digital skills.</p><p>Our aim is to make learning approachable and help students ask the right questions before choosing a course.</p><div class="detail-pill">📍 Bichhiya, Jungle Tulsiram, Gorakhpur</div></div><div class="about-panel"><div class="large-aci">ACI</div><h3>Director</h3><p class="director-name">Sanjay Kanojiya</p><a class="btn primary" href="contact.html#enquiry">Contact for Admission</a></div></section><section class="cta-band"><div><p class="eyebrow">HAVE QUESTIONS?</p><h2>We’re happy to hear from you.</h2><p>Share your question through our admission enquiry form.</p></div><a class="btn light" href="contact.html#enquiry">Send Enquiry →</a></section></main><footer class="footer"><div><a class="brand footer-brand" href="index.html"><span class="brand-icon">ACI</span><span>ARMY COMPUTER INSTITUTE<small>Learn Today. Lead Tomorrow.</small></span></a></div><div><b>Quick Links</b><a href="index.html">Home</a><a href="courses.html">Courses</a><a href="contact.html">Contact</a></div><div><b>Contact</b><p>Bichhiya, Jungle Tulsiram,<br>Near Mini Post Office, Gorakhpur, UP</p><a href="tel:+918953128683">8953128683</a></div><div class="copyright">© <span id="year"></span> Army Computer Institute. All rights reserved.</div></footer><script src="script.js"></script></body></html>
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>About Us | Army Computer Institute</title>
+  <meta name="description" content="Learn about Army Computer Institute in Bichhiya, Jungle Tulsiram, Gorakhpur, and our commitment to practical computer education.">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .about-photo {
+      width: 100%;
+      max-width: 520px;
+      min-height: 280px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 20px;
+      background: #eef2f7;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .about-photo img {
+      display: block;
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .about-image-caption {
+      margin-top: 12px;
+      color: #687386;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .about-layout {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .about-info {
+      margin-top: 24px;
+    }
+
+    .about-info p {
+      line-height: 1.8;
+    }
+
+    .about-panel {
+      text-align: center;
+      padding: 28px;
+      border-radius: 20px;
+    }
+
+    .about-panel .btn {
+      display: inline-flex;
+      justify-content: center;
+      margin-top: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .about-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .about-photo {
+        max-width: 100%;
+      }
+
+      .about-photo img {
+        height: 280px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-icon">ACI</span>
+      <span>
+        ARMY COMPUTER INSTITUTE
+        <small>Learn Today. Lead Tomorrow.</small>
+      </span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      aria-label="Toggle menu"
+      onclick="document.querySelector('.nav').classList.toggle('show')">
+      ☰
+    </button>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a class="active" href="about.html">About Us</a>
+      <a href="courses.html">Courses</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-cta" href="contact.html#enquiry">
+        Admission Enquiry
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Page Introduction -->
+    <section class="page-hero">
+      <p class="eyebrow">WHO WE ARE</p>
+
+      <h1>
+        About <span>Our Institute</span>
+      </h1>
+
+      <p>
+        A place to begin learning computer skills and growing
+        digital confidence.
+      </p>
+    </section>
+
+    <!-- About Institute -->
+    <section class="section">
+
+      <div class="about-layout">
+
+        <div class="about-info">
+          <p class="eyebrow">ARMY COMPUTER INSTITUTE</p>
+
+          <h2>
+            Learn with purpose.<br>
+            <span>Grow with confidence.</span>
+          </h2>
+
+          <p>
+            Army Computer Institute, located in Bichhiya,
+            Jungle Tulsiram, Gorakhpur, welcomes learners
+            interested in computer education and practical
+            digital skills.
+          </p>
+
+          <p>
+            Our aim is to make learning approachable and help
+            students ask the right questions before choosing
+            a course.
+          </p>
+
+          <p>
+            We encourage students to explore computer education,
+            develop useful skills and continue learning with
+            confidence.
+          </p>
+
+          <div class="detail-pill">
+            📍 Bichhiya, Jungle Tulsiram, Gorakhpur
+          </div>
+
+          <div style="margin-top: 24px;">
+            <a class="btn primary" href="contact.html#enquiry">
+              Contact for Admission →
+            </a>
+          </div>
+        </div>
+
+        <!-- Institute Photo -->
+        <div>
+          <div class="about-photo">
+            <img
+              src="https://raw.githubusercontent.com/Ashu90435/Ranahospital.Pvt.Ltd/main/WhatsApp%20Image%202026-10-12%20at%2016.20.52.jpeg"
+              alt="Army Computer Institute"
+              loading="lazy">
+          </div>
+
+          <p class="about-image-caption">
+            Army Computer Institute, Gorakhpur
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Director Section -->
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">OUR LEADERSHIP</p>
+        <h2>Meet Our <span>Director</span></h2>
+        <p>
+          Helping learners take the next step in their computer
+          education journey.
+        </p>
+      </div>
+
+      <div class="about-panel">
+        <div class="large-aci">ACI</div>
+
+        <h3>Director</h3>
+
+        <p class="director-name">
+          Sanjay Kanojiya
+        </p>
+
+        <p>
+          For information about available courses and admissions,
+          please contact Army Computer Institute.
+        </p>
+
+        <a class="btn primary" href="contact.html#enquiry">
+          Contact for Admission
+        </a>
+      </div>
+    </section>
+
+    <!-- Admission Call to Action -->
+    <section class="cta-band">
+      <div>
+        <p class="eyebrow">HAVE QUESTIONS?</p>
+
+        <h2>We're happy to hear from you.</h2>
+
+        <p>
+          Share your question through our admission enquiry form.
+        </p>
+      </div>
+
+      <a class="btn light" href="contact.html#enquiry">
+        Send Enquiry →
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+
+    <div>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-icon">ACI</span>
+        <span>
+          ARMY COMPUTER INSTITUTE
+          <small>Learn Today. Lead Tomorrow.</small>
+        </span>
+      </a>
+
+      <p>
+        Computer education and practical digital skills in Gorakhpur.
+      </p>
+    </div>
+
+    <div>
+      <b>Quick Links</b>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div>
+      <b>Contact</b>
+
+      <p>
+        Bichhiya, Jungle Tulsiram,<br>
+        Near Mini Post Office, Gorakhpur, UP
+      </p>
+
+      <a href="tel:+918953128683">8953128683</a>
+
+      <a
+        href="https://wa.me/918953128683"
+        target="_blank"
+        rel="noopener noreferrer">
+        WhatsApp Us
+      </a>
+    </div>
+
+    <div class="copyright">
+      © <span id="year"></span> Army Computer Institute.
+      All rights reserved.
+    </div>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
+```
