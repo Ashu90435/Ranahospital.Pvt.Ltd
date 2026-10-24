@@ -3,7 +3,21 @@
 @media(max-width:850px){.topbar{padding:0 5%;height:74px}.menu-toggle{display:block}.nav{display:none;position:absolute;left:0;right:0;top:74px;background:#fff;padding:18px 5%;box-shadow:0 15px 20px #10274610;flex-direction:column;align-items:stretch;gap:15px}.nav.show{display:flex}.nav .nav-cta{text-align:center}.hero{padding:55px 7%;grid-template-columns:1fr;gap:10px}.hero-art{min-height:300px}.quick-info{margin:0 5%;grid-template-columns:1fr;padding:20px}.section{padding:65px 6%}.feature-grid{grid-template-columns:1fr}.director{padding:38px 7%}.split,.contact-layout{grid-template-columns:1fr;gap:35px}.footer{padding:38px 7% 18px;grid-template-columns:1fr 1fr}.cta-band{padding:35px 7%;align-items:flex-start;flex-direction:column}.map-section{padding:10px 6% 55px}.contact-details h2{font-size:30px}}
 @media(max-width:460px){.brand{font-size:10px}.brand-icon{width:40px;height:40px}.hero h1{font-size:42px}.hero-copy{font-size:14px}.hero-art{transform:scale(.9);margin:-10px -20px}.hero-actions .btn{width:100%}.director{align-items:flex-start;gap:22px;flex-direction:column}.footer{grid-template-columns:1fr}.copyright{grid-column:1}.page-hero{padding:55px 7%}.enquiry-form{padding:22px}.map-frame{height:300px}}
 
-/* Home page promotional banner image */
-.banner-image{display:block;min-height:0;position:relative;width:100%;}
-.banner-image img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain;border-radius:16px;box-shadow:0 18px 45px #10274618;}
-@media(max-width:850px){.banner-image{width:100%;margin:18px 0 0;transform:none;}.banner-image img{border-radius:12px;}}
+
+/* Classroom photo slideshow on the home page */
+.classroom-slideshow{display:block!important;position:relative;min-height:360px!important;width:100%;max-width:540px;margin-inline:auto;border-radius:24px;overflow:hidden;background:#eaf1fb;box-shadow:0 22px 55px #10274620;isolation:isolate}
+.classroom-slideshow .slides{position:absolute;inset:0}
+.classroom-slideshow .slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .7s ease;display:block}
+.classroom-slideshow .slide.active{opacity:1}
+.classroom-slideshow:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#071a35d9);pointer-events:none;z-index:1}
+.slide-caption{position:absolute;z-index:2;left:24px;right:24px;bottom:64px;color:white;display:flex;flex-direction:column;gap:4px;text-shadow:0 2px 8px #00132b60}
+.slide-kicker{font-size:10px;letter-spacing:2px;font-weight:800;color:#dbeafe}
+.slide-caption strong{font-family:Manrope,sans-serif;font-size:clamp(20px,2.5vw,28px);line-height:1.2}
+.slide-caption small{font-size:12px;color:#f0f5ff}
+.slide-controls{position:absolute;z-index:3;bottom:16px;left:20px;right:20px;display:flex;align-items:center;justify-content:space-between}
+.slide-controls button{cursor:pointer;border:1px solid #ffffff80;background:#ffffffed;color:#17345b;border-radius:50%;width:34px;height:34px;font-size:22px;display:grid;place-items:center}
+.slide-dots{display:flex;gap:8px;align-items:center}
+.slide-controls .slide-dot{width:9px;height:9px;padding:0;border:0;background:#ffffff80}
+.slide-controls .slide-dot.active{width:24px;border-radius:10px;background:white}
+@media(max-width:850px){.classroom-slideshow{min-height:300px!important;max-width:100%;margin-top:20px}.hero{gap:24px}}
+@media(max-width:480px){.classroom-slideshow{min-height:250px!important;border-radius:18px}.slide-caption{left:16px;right:16px;bottom:58px}.slide-controls{left:14px;right:14px;bottom:12px}}
