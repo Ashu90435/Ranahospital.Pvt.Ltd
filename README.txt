@@ -22,3 +22,5 @@ PUBLISH ON GITHUB PAGES:
 5. Wait for GitHub Pages to publish the website.
 
 Please verify phone number, address, and actual course offerings before publishing.
+
+HOME PAGE UPDATE: This package adds the institute logo URL and a rotating classroom slideshow to index.html. The slideshow references the three image paths provided in the request on GitHub. Upload/replace the website files in your repository and commit changes. If GitHub image filenames are different, update the three raw.githubusercontent.com URLs in index.html.
