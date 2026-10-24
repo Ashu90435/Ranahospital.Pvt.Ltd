@@ -37,3 +37,29 @@ document.addEventListener('DOMContentLoaded', () => {
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   });
 });
+
+
+// Home page classroom slideshow with automatic rotation and manual controls
+(() => {
+  const setupSlideshow = () => {
+    const box = document.querySelector('.classroom-slideshow');
+    if (!box) return;
+    const slides = [...box.querySelectorAll('.slide')];
+    const dots = [...box.querySelectorAll('.slide-dot')];
+    if (!slides.length) return;
+    let current = 0;
+    let timer;
+    const show = (index) => {
+      current = (index + slides.length) % slides.length;
+      slides.forEach((slide, i) => slide.classList.toggle('active', i === current));
+      dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
+    };
+    const restart = () => { clearInterval(timer); timer = setInterval(() => show(current + 1), 4500); };
+    box.querySelector('.slide-prev')?.addEventListener('click', () => { show(current - 1); restart(); });
+    box.querySelector('.slide-next')?.addEventListener('click', () => { show(current + 1); restart(); });
+    dots.forEach((dot, i) => dot.addEventListener('click', () => { show(i); restart(); }));
+    show(0); restart();
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setupSlideshow);
+  else setupSlideshow();
+})();
