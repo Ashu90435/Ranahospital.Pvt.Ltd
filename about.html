@@ -1,2 +1,110 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>About Us | Army Computer Institute</title><link rel="stylesheet" href="style.css"><style>.brand-icon.logo-image-wrap{display:inline-flex;align-items:center;justify-content:center;overflow:hidden;padding:0;background:transparent}.brand-icon.logo-image-wrap img{display:block;width:100%;height:100%;object-fit:cover;border-radius:inherit}</style>
-</head><body><header class="topbar"><a class="brand" href="index.html"><span class="brand-icon logo-image-wrap"><img src="https://raw.githubusercontent.com/Ashu90435/Ranahospital.Pvt.Ltd/main/institute%20logo" alt="Army Computer Institute logo"></span><span>ARMY COMPUTER INSTITUTE<small>Learn Today. Lead Tomorrow.</small></span></a><button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav').classList.toggle('show')">☰</button><nav class="nav"><a href="index.html">Home</a><a class="active" href="about.html">About Us</a><a href="courses.html">Courses</a><a href="contact.html">Contact</a><a class="nav-cta" href="contact.html#enquiry">Admission Enquiry</a></nav></header><main><section class="page-hero"><p class="eyebrow">WHO WE ARE</p><h1>About <span>Our Institute</span></h1><p>A place to begin learning computer skills and growing digital confidence.</p></section><section class="section split"><div><p class="eyebrow">ARMY COMPUTER INSTITUTE</p><h2>Learn with purpose.<br><span>Grow with confidence.</span></h2><p>Army Computer Institute, located in Bichhiya, Jungle Tulsiram, Gorakhpur, welcomes learners interested in computer education and practical digital skills.</p><p>Our aim is to make learning approachable and help students ask the right questions before choosing a course.</p><div class="detail-pill">📍 Bichhiya, Jungle Tulsiram, Gorakhpur</div></div><div class="about-panel"><div class="large-aci">ACI</div><h3>Director</h3><p class="director-name">Sanjay Kanojiya</p><a class="btn primary" href="contact.html#enquiry">Contact for Admission</a></div></section><section class="cta-band"><div><p class="eyebrow">HAVE QUESTIONS?</p><h2>We’re happy to hear from you.</h2><p>Share your question through our admission enquiry form.</p></div><a class="btn light" href="contact.html#enquiry">Send Enquiry →</a></section></main><footer class="footer"><div><a class="brand footer-brand" href="index.html"><span class="brand-icon logo-image-wrap"><img src="https://raw.githubusercontent.com/Ashu90435/Ranahospital.Pvt.Ltd/main/institute%20logo" alt="Army Computer Institute logo"></span><span>ARMY COMPUTER INSTITUTE<small>Learn Today. Lead Tomorrow.</small></span></a></div><div><b>Quick Links</b><a href="index.html">Home</a><a href="courses.html">Courses</a><a href="contact.html">Contact</a></div><div><b>Contact</b><p>Bichhiya, Jungle Tulsiram,<br>Near Mini Post Office, Gorakhpur, UP</p><a href="tel:+918953128683">8953128683</a></div><div class="copyright">© <span id="year"></span> Army Computer Institute. All rights reserved.</div></footer><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us | Army Computer Institute</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.brand-icon.logo-image-wrap{display:inline-flex;align-items:center;justify-content:center;overflow:hidden;padding:0;background:#fff;border:1px solid #e3eaf3;border-radius:50%;flex:0 0 46px}
+.brand-icon.logo-image-wrap img{display:block;width:100%;height:100%;object-fit:contain;border-radius:inherit}
+.about-intro{padding:58px max(7%,calc((100% - 1100px)/2));background:linear-gradient(120deg,#f1f6ff,#fff 58%,#edf4ff)}
+.about-intro .eyebrow{margin-bottom:12px}
+.about-intro h1{font-family:Manrope,sans-serif;font-size:clamp(36px,4.5vw,52px);line-height:1.12;letter-spacing:-1.8px;color:#102746;margin:0}
+.about-intro h1 span{color:#2463eb}
+.about-intro .intro-copy{max-width:700px;color:#66758a;font-size:15px;margin:18px 0 0}
+.about-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.about-copy h2{font-family:Manrope,sans-serif;font-size:clamp(28px,3.4vw,39px);letter-spacing:-1px;line-height:1.2;color:#102746;margin:0 0 18px}
+.about-copy h2 span{color:#2463eb}
+.about-copy p{font-size:14px;color:#66758a;line-height:1.85}
+.about-points{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:25px 0}
+.about-point{padding:13px 14px;border:1px solid #e3eaf3;border-radius:12px;background:#fff;font-size:12px;font-weight:700;color:#182438}
+.about-point span{display:inline-grid;place-items:center;width:26px;height:26px;margin-right:7px;border-radius:8px;background:#edf4ff;color:#2463eb}
+.director-card{background:#fff;border:1px solid #e3eaf3;border-radius:22px;padding:18px;box-shadow:0 18px 50px #10274612;max-width:440px;width:100%;margin-inline:auto}
+.director-photo-frame{height:320px;border-radius:16px;overflow:hidden;background:linear-gradient(135deg,#edf4ff,#dce8fb);display:flex;align-items:center;justify-content:center}
+.director-photo-frame img{width:100%;height:100%;object-fit:cover;display:block}
+.director-card-caption{padding:20px 8px 8px;text-align:center}
+.director-card-caption .eyebrow{margin-bottom:5px}
+.director-card-caption h2{font:800 25px Manrope,sans-serif;color:#102746;margin:0}
+.director-card-caption p{font-size:12px;color:#66758a;margin:5px 0 17px}
+.director-card-caption .btn{margin-top:3px}
+.about-location{display:flex;align-items:center;gap:12px;background:#edf4ff;border-radius:12px;padding:14px 16px;color:#102746;font-size:12px;margin-top:25px}
+.about-location .pin{font-size:22px;color:#2463eb}
+.about-values{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.about-value{padding:23px;border:1px solid #e3eaf3;border-radius:15px;background:#fff}
+.about-value .value-icon{display:grid;place-items:center;width:43px;height:43px;border-radius:12px;background:#edf4ff;color:#2463eb;font-size:21px;margin-bottom:14px}
+.about-value h3{font:800 15px Manrope,sans-serif;color:#102746;margin:0 0 7px}
+.about-value p{font-size:12px;color:#66758a;margin:0}
+@media(max-width:850px){.about-intro{padding:48px 6%}.about-layout{grid-template-columns:1fr;gap:30px}.director-card{max-width:460px}.about-values{grid-template-columns:1fr}.about-points{grid-template-columns:1fr 1fr}}
+@media(max-width:460px){.about-points{grid-template-columns:1fr}.director-photo-frame{height:270px}.director-card{padding:12px}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <span class="brand-icon logo-image-wrap"><img src="https://raw.githubusercontent.com/Ashu90435/Ranahospital.Pvt.Ltd/main/institute%20logo" alt="Army Computer Institute logo"></span>
+    <span>ARMY COMPUTER INSTITUTE<small>Learn Today. Lead Tomorrow.</small></span>
+  </a>
+  <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav').classList.toggle('show')">☰</button>
+  <nav class="nav">
+    <a href="index.html">Home</a><a class="active" href="about.html">About Us</a><a href="courses.html">Courses</a><a href="contact.html">Contact</a><a class="nav-cta" href="contact.html#enquiry">Admission Enquiry</a>
+  </nav>
+</header>
+<main>
+  <section class="about-intro">
+    <p class="eyebrow">GET TO KNOW US</p>
+    <h1>About <span>Army Computer Institute</span></h1>
+    <p class="intro-copy">Practical computer education, useful digital skills, and a supportive place to begin your learning journey in Gorakhpur.</p>
+  </section>
+  <section class="section about-layout">
+    <div class="about-copy">
+      <p class="eyebrow">WHO WE ARE</p>
+      <h2>Learn with purpose.<br><span>Grow with confidence.</span></h2>
+      <p>Army Computer Institute, located in Bichhiya, Jungle Tulsiram, Gorakhpur, welcomes learners who want to build their computer knowledge and practical digital skills.</p>
+      <p>Our aim is to make computer learning approachable, encourage regular practice, and help students understand their course options before they choose a learning path.</p>
+      <div class="about-points">
+        <div class="about-point"><span>✓</span> Practical learning</div>
+        <div class="about-point"><span>✓</span> Beginner-friendly guidance</div>
+        <div class="about-point"><span>✓</span> Useful digital skills</div>
+        <div class="about-point"><span>✓</span> Admission support</div>
+      </div>
+      <div class="about-location"><span class="pin">⌖</span><span><strong>Visit our institute</strong><br>Bichhiya, Jungle Tulsiram, near Mini Post Office, Gorakhpur, Uttar Pradesh</span></div>
+    </div>
+    <aside class="director-card">
+      <div class="director-photo-frame">
+        <img src="https://raw.githubusercontent.com/Ashu90435/Ranahospital.Pvt.Ltd/main/director%20photo.JPG" alt="Sanjay Kanojiya, Director of Army Computer Institute" loading="eager">
+      </div>
+      <div class="director-card-caption">
+        <p class="eyebrow">MEET OUR DIRECTOR</p>
+        <h2>Sanjay Kanojiya</h2>
+        <p>Director, Army Computer Institute</p>
+        <a class="btn primary" href="contact.html#enquiry">Contact for Admission →</a>
+      </div>
+    </aside>
+  </section>
+  <section class="section" style="padding-top:0">
+    <div class="section-heading">
+      <p class="eyebrow">WHAT MATTERS TO US</p>
+      <h2>Learning that builds <span>confidence</span></h2>
+      <p>We want students to practise, ask questions, and keep developing useful skills step by step.</p>
+    </div>
+    <div class="about-values">
+      <article class="about-value"><div class="value-icon">⌨</div><h3>Hands-on Practice</h3><p>Build familiarity by practising computer tasks and applications.</p></article>
+      <article class="about-value"><div class="value-icon">✦</div><h3>Supportive Learning</h3><p>Explore course options and ask questions before getting started.</p></article>
+      <article class="about-value"><div class="value-icon">↗</div><h3>Digital Confidence</h3><p>Develop skills that can support study, work, and everyday tasks.</p></article>
+    </div>
+  </section>
+  <section class="cta-band">
+    <div><p class="eyebrow">HAVE QUESTIONS?</p><h2>We’re happy to hear from you.</h2><p>Send your question through our admission enquiry form.</p></div>
+    <a class="btn light" href="contact.html#enquiry">Send Enquiry →</a>
+  </section>
+</main>
+<footer class="footer">
+  <div><a class="brand footer-brand" href="index.html"><span class="brand-icon logo-image-wrap"><img src="https://raw.githubusercontent.com/Ashu90435/Ranahospital.Pvt.Ltd/main/institute%20logo" alt="Army Computer Institute logo"></span><span>ARMY COMPUTER INSTITUTE<small>Learn Today. Lead Tomorrow.</small></span></a><p>Computer education and practical digital skills in Gorakhpur.</p></div>
+  <div><b>Quick Links</b><a href="index.html">Home</a><a href="courses.html">Courses</a><a href="contact.html">Contact</a></div>
+  <div><b>Contact</b><p>Bichhiya, Jungle Tulsiram,<br>Near Mini Post Office, Gorakhpur, UP</p><a href="tel:+918953128683">8953128683</a></div>
+  <div class="copyright">© <span id="year"></span> Army Computer Institute. All rights reserved.</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
